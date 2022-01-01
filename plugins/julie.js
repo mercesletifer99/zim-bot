@@ -70,7 +70,7 @@ else if (Config.WORKTYPE == 'public') {
             (match.length >= 3 ? HANDLER + match[2] : command.pattern) +
             (command.desc === ""
               ? "\n\n"
-              : " ".repeat( - match[2].length) + "\n📓");
+             ;
           if (command.desc !== "")
             CMD_HELP += command.desc + (command.usage === "" ? "\n\n" : "\n\n");
         }
