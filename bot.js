@@ -140,11 +140,11 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         });
 
         console.log(
-            chalk.green.bold('✅ Julie Mwol working!')
+            chalk.green.bold('✅ Zimbot now working!')
         );
         await conn.sendMessage(
             conn.user.jid,
-            '*Bot Started*',
+            '*ZimBot Started*',
             MessageType.text
           );
           if (config.LANG == 'EN' || config.LANG == 'ML') {
@@ -178,7 +178,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         }
 
         if (msg.messageStubType === 32 || msg.messageStubType === 28) {
-        var plk_say = new Date().toLocaleString('HI', { timeZone: 'Asia/Kolkata' }).split(' ')[1]
+        var plk_say = new Date().toLocaleString('HI', { timeZone: 'Africa/Harare' }).split(' ')[1]
         const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
         var plk_here = new Date().toLocaleDateString(get_localized_date)
 	    var afn_plk_ = '```⏱ Time :' + plk_say + '```\n```📅 Date :' + plk_here + '```'
@@ -203,7 +203,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
           }  //thanks to farhan      
             return;
         } else if (msg.messageStubType === 27 || msg.messageStubType === 31) {
-        var plk_say = new Date().toLocaleString('HI', { timeZone: 'Asia/Kolkata' }).split(' ')[1]
+        var plk_say = new Date().toLocaleString('HI', { timeZone: 'Africa/Harare' }).split(' ')[1]
         const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
         var plk_here = new Date().toLocaleDateString(get_localized_date)
 	    var afn_plk_ = '```⏱ Time :' + plk_say + '```\n```📅 Date :' + plk_here + '```'
@@ -324,8 +324,8 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                                     'Gerçekleşen Hata: ' + error + '\n\n'
                                     , MessageType.text);
                             } else {
-                                await conn.sendMessage(conn.user.jid, '*~_________~ 𝕁𝕦𝕝𝕚𝕖𝕄𝕨𝕠𝕝 ~______~*' +
-                                    '\n\n*🧞‍♂️ ' + error + '*\n\n*Support group*\nchat.whatsapp.com/EWLP9VPgYmgGff6NORWSKk ' 
+                                await conn.sendMessage(conn.user.jid, '*~_________~ZIMBOT~______~*' +
+                                    '\n\n*🧞‍♂️ ' + error + '*\n\n*Support group*\nchat.whatsapp.com/Ky6oPU7yiNE955eT26vIDe ' 
                                     , MessageType.text);
                             }
                         }
