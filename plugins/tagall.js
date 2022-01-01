@@ -21,7 +21,7 @@ async function checkImAdmin(message, user = message.client.user.jid) {
     return sonuc.includes(true);
 }
 
-Julie.addCommand({pattern: 'tagall ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.TAGALL_DESC }, (async (message, match) => {
+Julie.addCommand({pattern: 'tagall ?(.*)', fromMe: false, dontAddCommandList: true, desc: Lang.TAGALL_DESC }, (async (message, match) => {
    
     if (!message.reply_message) {
         if (match[1] !== '') {
@@ -69,7 +69,7 @@ else if (Config.WORKTYPE == 'public') {
     
   
     
-    Julie.addCommand({pattern: 'tagall ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.TAGALL_DESC }, (async (message, match) => {
+    Julie.addCommand({pattern: 'tagall ?(.*)', fromMe: false, dontAddCommandList: true, desc: Lang.TAGALL_DESC }, (async (message, match) => {
         
     if (!message.reply_message) {
         if (match[1] !== '') {
