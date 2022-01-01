@@ -7,23 +7,23 @@ const Lang = Language.getString('wallpaper');
 
 Asena.addCommand({pattern: 'git', fromMe: false, desc: "Gives github link of the bot"}, (async (message, match) => {
 
-    var skl = await axios.get("https://i.imgur.com/w89FHm7.jpeg", { responseType: 'arraybuffer' })
+    var skl = await axios.get("https://i.imgur.com/O4lVccf.jpeg", { responseType: 'arraybuffer' })
 
-    await message.sendMessage(Buffer(skl.data), MessageType.image, {mimetype: Mimetype.png, caption: `*Bot Name: Amalser*
+    await message.sendMessage(Buffer(skl.data), MessageType.image, {mimetype: Mimetype.png, caption: `*Bot Name: ZIM-BOT*
 
-*Creator number : wa.me/919895828468?text=Hii%20Amal%20Ser.%20*
+*Creator number : wa.me/27634090203?text=Hii%20DripsMemes%20Sir.%20*
 
  *To check update .update   To update Bot .update now*
 
- *Bot making video : https://youtu.be/Tb1B-rS52uo*
+ *Bot making video : https://www.youtube.com/channel/UC2hESq6BCRMCU-LKpl7Oq8g*
      
- *Instagram id: https://www.instagram.com/p/CCdcH3FBd1a/?utm_medium=copy_link*
+ *Instagram id: https://www.instagram.com/zim_hot_chicks_official?utm_medium=copy_link*
 
  *Yt_PASSWORD: _________(password on this video watch it full)*
 
- *githublink : https://github.com/Amal-ser/Amalser*
+ *githublink : https://github.com/DripsMemes*
 
- *Amalser New Acoount Git Link Old Account Is Flagged Hope you Enjoy This Thanku 🥰*
+ *Zimbot created by Drips Memes follow me subcribe to my youtube channell for more info*
 `}) 
 
 }));
