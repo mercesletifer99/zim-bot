@@ -31,7 +31,7 @@ Neotro.addCommand({pattern: 'help', fromMe: false, dontAddCommandList: true}, (a
         {title: 'Forex Trading', description: "Forex Trading mentorship and signals.\n\n\n*Join my Telegram group*.\n\nhttps://t.me/tradetalkzim.\n\n*Subcribe to our Youtube channel.*\n\nhttps://youtube.com/channel/UCLurCE7y35ZQyP7_KPBb_Tw.\n\n*.  ", rowId:" rowid9"}
        ]
        
-       const sections = [{title: "ᴀᴍᴀʟsᴇʀ ❤️", rows: rows}]
+       const sections = [{title: "ZIMBOT ❤️", rows: rows}]
        
        const button = {
         buttonText: '𝗖𝗟𝗜𝗖𝗞 𝗛𝗘𝗥𝗘',
