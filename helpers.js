@@ -17,13 +17,13 @@
 */
 
 function successfullMessage(msg) {
-    return "✅ *Zimbot*:  ```" + msg + "```"
+    return "✅ *Zim-bot*:  ```" + msg + "```"
 }
 function errorMessage(msg) {
-    return "🛑 *Zimbot*:  ```" + msg + "```"
+    return "🛑 *Zim-bot*:  ```" + msg + "```"
 }
 function infoMessage(msg) {
-    return "⏺️ *Zimbot*:  ```" + msg + "```"
+    return "⏺️ *Zim-bot*:  ```" + msg + "```"
 }
 
 
