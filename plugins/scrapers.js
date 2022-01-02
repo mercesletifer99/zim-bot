@@ -130,9 +130,9 @@ if (config.LANG == 'RU') {
 }
 
 
-if (config.WORKTYPE == 'private') {
+if (config.WORKTYPE == 'public') {
 
-    Julie.addCommand({pattern: 'trt(?: |$)(\\S*) ?(\\S*)', desc: Lang.TRANSLATE_DESC, usage: Lang.TRANSLATE_USAGE, fromMe: true}, (async (message, match) => {
+    Julie.addCommand({pattern: 'trt(?: |$)(\\S*) ?(\\S*)', desc: Lang.TRANSLATE_DESC, usage: Lang.TRANSLATE_USAGE, fromMe: false}, (async (message, match) => {
 
         if (!message.reply_message) {
             return await message.client.sendMessage(message.jid,Lang.NEED_REPLY,MessageType.text);
@@ -215,7 +215,7 @@ if (config.WORKTYPE == 'private') {
         succ_on = 'Antilink Berhasil Dibuka!'
         succ_off = 'Antilink Berhasil Ditutup!'
     }
-    Julie.addCommand({pattern: 'antilink ?(.*)', fromMe: true, desc: l_dsc, usage: '.antilink on / off' }, (async (message, match) => {
+    Julie.addCommand({pattern: 'antilink ?(.*)', fromMe: false, desc: l_dsc, usage: '.antilink on / off' }, (async (message, match) => {
         const anti_status = `${config.ANTİLİNK}`
         if (match[1] == 'on') {
             if (anti_status == 'true') {
@@ -366,7 +366,7 @@ if (config.WORKTYPE == 'private') {
         const rep_7 = res_1 + res_2 + res_3 + res_4 + res_5 + res_6
         await message.client.sendMessage(message.jid,rep_7,MessageType.text);
     }));
-    Julie.addCommand({pattern: 'currency(?: ([0-9.]+) ([a-zA-Z]+) ([a-zA-Z]+)|$|(.*))', fromMe: true}, (async (message, match) => {
+    Julie.addCommand({pattern: 'currency(?: ([0-9.]+) ([a-zA-Z]+) ([a-zA-Z]+)|$|(.*))', fromMe: false}, (async (message, match) => {
 
         if(match[1] === undefined || match[2] == undefined || match[3] == undefined) {
             return await message.client.sendMessage(message.jid,Lang.CURRENCY_ERROR,MessageType.text);
@@ -420,7 +420,7 @@ if (config.WORKTYPE == 'private') {
         }));
     }
     else {
-        Julie.addCommand({pattern: 'tts (.*)', fromMe: true, desc: Lang.TTS_DESC}, (async (message, match) => {
+        Julie.addCommand({pattern: 'tts (.*)', fromMe: false, desc: Lang.TTS_DESC}, (async (message, match) => {
 
             if(match[1] === undefined || match[1] == "")
                 return;
@@ -505,7 +505,7 @@ if (config.WORKTYPE == 'private') {
         });
     }));
 
-    Julie.addCommand({pattern: 'yt ?(.*)', fromMe: true, desc: Lang.YT_DESC}, (async (message, match) => { 
+    Julie.addCommand({pattern: 'yt ?(.*)', fromMe: false, desc: Lang.YT_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);    
         var reply = await message.client.sendMessage(message.jid,Lang.GETTING_VIDEOS,MessageType.text);
@@ -630,9 +630,9 @@ if (config.WORKTYPE == 'private') {
             }
 
         }
-        else if (match[1] === "tr" || match[1] === "Tr" || match[1] === "TR" || match[1].includes('turkiye') || match[1].includes('türkiye') || match[1].includes('türk') ) {
+        else if (match[1] === "zw" || match[1] === "zw" || match[1] === "zw" || match[1].includes('zimbabwe') || match[1].includes('zimbabwe') || match[1].includes('zim') ) {
             try{
-                const respo = await got("https://coronavirus-19-api.herokuapp.com/countries/Turkey").then(async ok  => {
+                const respo = await got("https://coronavirus-19-api.herokuapp.com/countries/Zimbabwe").then(async ok  => {
                     resp = JSON.parse(ok.body);
                     await message.reply(`🇹🇷 *Türkiye İçin Sonuçlar:*\n😷 *Toplam Vaka:* ${resp.cases}\n🏥 *Günlük Hasta:* ${resp.todayCases}\n⚰️ *Toplam Ölü:* ${resp.deaths}\n☠️ *Günlük Ölü:* ${resp.todayDeaths}\n💊 *Toplam İyileşen:* ${resp.recovered}\n😷 *Aktif Vaka:* ${resp.active}\n🆘 *Ağır Hasta:* ${resp.critical}\n🧪 *Toplam Test:* ${resp.totalTests}`);
                 });
@@ -653,11 +653,11 @@ if (config.WORKTYPE == 'private') {
                 await message.reply(`Error : \n${err.message}`, MessageType.text)
             }
         }
-        else if (match[1] === "de" || match[1] === "De" || match[1] === "DE" || match[1] === "Germany" || match[1] === "germany" || match[1].includes('deutschland') ) {
+        else if (match[1] === "sa" || match[1] === "za" || match[1] === "SA" || match[1] === "South Africa" || match[1] === "sa" || match[1].includes('johannesburg') ) {
             try{
-                const respo = await got("https://coronavirus-19-api.herokuapp.com/countries/Germany").then(async ok  => {
+                const respo = await got("https://coronavirus-19-api.herokuapp.com/countries/South Africa").then(async ok  => {
                     resp = JSON.parse(ok.body);
-                    await message.reply(`🇩🇪 *Daten für Deutschland:*\n😷 *Fälle İnsgesamt:* ${resp.cases}\n🏥 *Tägliche Fälle:* ${resp.todayCases}\n⚰️ *Totale Todesfälle:* ${resp.deaths}\n☠️ *Tägliche Todesfälle:* ${resp.todayDeaths}\n💊 *Insgesamt Wiederhergestellt:* ${resp.recovered}\n😷 *Aktuelle Fälle:* ${resp.active}\n🆘 *Kritische Fälle:* ${resp.critical}\n🧪 *Gesamttests:* ${resp.totalTests}`);
+                    await message.reply(`🇩🇪 *Data for South Africa:*\n😷 *Total cases:* ${resp.cases}\n🏥 *Daily cases:* ${resp.todayCases}\n⚰️ *Totall casese:* ${resp.deaths}\n☠️ *Daily Deaths:* ${resp.todayDeaths}\n💊 *Total Recovered:* ${resp.recovered}\n😷 *Active Cases:* ${resp.active}\n🆘 *Critical Cases:* ${resp.critical}\n🧪 *Totals test:* ${resp.totalTests}`);
 
                 });
 
@@ -861,7 +861,7 @@ else if (config.WORKTYPE == 'public') {
         const rep_7 = res_1 + res_2 + res_3 + res_4 + res_5 + res_6
         await message.client.sendMessage(message.jid,rep_7,MessageType.text, { quoted: message.data });
     }));
-    Julie.addCommand({pattern: 'currency(?: ([0-9.]+) ([a-zA-Z]+) ([a-zA-Z]+)|$|(.*))', fromMe: true}, (async (message, match) => {
+    Julie.addCommand({pattern: 'currency(?: ([0-9.]+) ([a-zA-Z]+) ([a-zA-Z]+)|$|(.*))', fromMe: false}, (async (message, match) => {
 
         if(match[1] === undefined || match[2] == undefined || match[3] == undefined) {
             return await message.client.sendMessage(message.jid,Lang.CURRENCY_ERROR,MessageType.text);
@@ -1168,11 +1168,11 @@ else if (config.WORKTYPE == 'public') {
             }
 
         }
-        else if (match[1] === "usa" || match[1] === "Usa" || match[1] === "USA" || match[1] === "america" || match[1] === "America") {
+        else if (match[1] === "zw" || match[1] === "ZIM" || match[1] === "zim" || match[1] === "zimbabwe" || match[1] === "Zimbabwe") {
             try{
-                const respo = await got("https://coronavirus-19-api.herokuapp.com/countries/USA").then(async ok  => {
+                const respo = await got("https://coronavirus-19-api.herokuapp.com/countries/Zimbabwe").then(async ok  => {
                     resp = JSON.parse(ok.body);
-                    await message.reply(`🇺🇲 *Datas for USA:*\n😷 *Total Cases:* ${resp.cases}\n🏥 *Daily Cases:* ${resp.todayCases}\n⚰️ *Total Deaths:* ${resp.deaths}\n☠️ *Daily Deaths:* ${resp.todayDeaths}\n💊 *Total Recovered:* ${resp.recovered}\n😷 *Active Cases:* ${resp.active}\n🆘 *Critical Cases:* ${resp.critical}\n🧪 *Total Test:* ${resp.totalTests}`);
+                    await message.reply(` *Data for Zimbabwe:*\n😷 *Total Cases:* ${resp.cases}\n🏥 *Daily Cases:* ${resp.todayCases}\n⚰️ *Total Deaths:* ${resp.deaths}\n☠️ *Daily Deaths:* ${resp.todayDeaths}\n💊 *Total Recovered:* ${resp.recovered}\n😷 *Active Cases:* ${resp.active}\n🆘 *Critical Cases:* ${resp.critical}\n🧪 *Total Test:* ${resp.totalTests}`);
 
                 });
 
@@ -1324,11 +1324,11 @@ else if (config.WORKTYPE == 'public') {
                 await message.reply(`Error : \n${err.message}`, MessageType.text)
             }
         } 
-        else if (match[1] === "nl" || match[1] === "Nl" || match[1] === "NL" || match[1].includes('netherland') ) {
+        else if (match[1] === "sa" || match[1] === "za" || match[1] === "SA" || match[1].includes('South Africa') ) {
             try{
-                const respo = await got("https://coronavirus-19-api.herokuapp.com/countries/Netherlands").then(async ok  => {
+                const respo = await got("https://coronavirus-19-api.herokuapp.com/countries/South Africa").then(async ok  => {
                     resp = JSON.parse(ok.body);
-                    await message.reply(`🇳🇱 *Datas for Netherlands:*\n😷 *Total Cases:* ${resp.cases}\n🏥 *Daily Cases:* ${resp.todayCases}\n⚰️ *Total Deaths:* ${resp.deaths}\n☠️ *Daily Deaths:* ${resp.todayDeaths}\n💊 *Total Recovered:* ${resp.recovered}\n😷 *Active Cases:* ${resp.active}\n🆘 *Critical Cases:* ${resp.critical}\n🧪 *Total Test:* ${resp.totalTests}`);
+                    await message.reply(` *Datas for Netherlands:*\n😷 *Total Cases:* ${resp.cases}\n🏥 *Daily Cases:* ${resp.todayCases}\n⚰️ *Total Deaths:* ${resp.deaths}\n☠️ *Daily Deaths:* ${resp.todayDeaths}\n💊 *Total Recovered:* ${resp.recovered}\n😷 *Active Cases:* ${resp.active}\n🆘 *Critical Cases:* ${resp.critical}\n🧪 *Total Test:* ${resp.totalTests}`);
 
                 });
 
