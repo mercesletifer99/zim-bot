@@ -14,7 +14,7 @@ const Config = require('../config');
 const Language = require('../language');
 const Lang = Language.getString('greetings');
 
-Julie.addCommand({pattern: 'welcome$', fromMe: true, desc: Lang.WELCOME_DESC}, (async (message, match) => {
+Julie.addCommand({pattern: 'welcome$', fromMe: false, desc: Lang.WELCOME_DESC}, (async (message, match) => {
     var hg = await sql.getMessage(message.jid);
     if (hg === false) {
         await message.client.sendMessage(message.jid,Lang.NOT_SET_WELCOME,MessageType.text);
@@ -23,7 +23,7 @@ Julie.addCommand({pattern: 'welcome$', fromMe: true, desc: Lang.WELCOME_DESC}, (
     }
 }));
 
-Julie.addCommand({pattern: 'welcome (.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+Julie.addCommand({pattern: 'welcome (.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
     if (match[1] === '') {
         return await message.client.sendMessage(message.jid,Lang.NEED_WELCOME_TEXT);
     } else {
@@ -33,7 +33,7 @@ Julie.addCommand({pattern: 'welcome (.*)', fromMe: true, dontAddCommandList: tru
     }
 }));
 
-Julie.addCommand({pattern: 'goodbye$', fromMe: true, desc: Lang.GOODBYE_DESC}, (async (message, match) => {
+Julie.addCommand({pattern: 'goodbye$', fromMe: false, desc: Lang.GOODBYE_DESC}, (async (message, match) => {
     var hg = await sql.getMessage(message.jid, 'goodbye');
     if (hg === false) {
         await message.client.sendMessage(message.jid,Lang.NOT_SET_GOODBYE,MessageType.text)
@@ -42,7 +42,7 @@ Julie.addCommand({pattern: 'goodbye$', fromMe: true, desc: Lang.GOODBYE_DESC}, (
     }
 }));
 
-Julie.addCommand({pattern: 'goodbye (.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+Julie.addCommand({pattern: 'goodbye (.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
     if (match[1] === '') {
         return await message.client.sendMessage(message.jid,Lang.NEED_GOODBYE_TEXT,MessageType.text);
     } else {
