@@ -14,9 +14,9 @@ const LOAD_ING = "*Searching your apk*"
 const Language = require('../language');
 const Lang = Language.getString('weather');
 
-if (config.WORKTYPE == 'private') {
+if (config.WORKTYPE == 'public') {
 
-    Julie.addCommand({pattern: 'sweather ?(.*)', fromMe: true, desc: "Gives you the weekly interpretations of space weather observations provided by the Space Weather Research Center (SWRC) for a p."}, async (message, match) => {
+    Julie.addCommand({pattern: 'sweather ?(.*)', fromMe: false, desc: "Gives you the weekly interpretations of space weather observations provided by the Space Weather Research Center (SWRC) for a p."}, async (message, match) => {
 	  if (match[1] === 'where is it?') return await message.reply("wait...");
 	  const url = `https://api.nasa.gov/DONKI/notifications?type=all&api_key=ccdRSkRerDoJHn2g36DGnJgyctfkGDml3ZzMWWxL`;
 	  try {
@@ -38,7 +38,7 @@ if (config.WORKTYPE == 'private') {
 	  }
   });
 
-    Julie.addCommand({pattern: 'compliment ?(.*)', fromMe: true, desc: Lang.CM_DESC}, async (message, match) => {
+    Julie.addCommand({pattern: 'compliment ?(.*)', fromMe: false, desc: Lang.CM_DESC}, async (message, match) => {
 	  if (match[1] === 'xx') return await message.reply(Lang.NEED_LOCATIONA);
 	  const url = `https://complimentr.com/api`;
 	  try {
@@ -50,7 +50,7 @@ if (config.WORKTYPE == 'private') {
 	  }
   });
 
-    Julie.addCommand({pattern: 'happymod ?(.*)', fromMe: true, desc: Lang.HMODD_DESC, dontAddCommandList: true }, async (message, match) => {
+    Julie.addCommand({pattern: 'happymod ?(.*)', fromMe: false, desc: Lang.HMODD_DESC, dontAddCommandList: true }, async (message, match) => {
 	  if (match[1] === '') return await message.reply(Lang.NEED_APPNAME);
 	  const url = `https://api.zeks.xyz/api/happymod?apikey=&q=${match[1]}&apikey=1hroZ3ju94h0PBjCNKsfhYaSuLs`;
 	  try {
@@ -65,7 +65,7 @@ if (config.WORKTYPE == 'private') {
 	  }
   });
 
-    Julie.addCommand({pattern: 'insult ?(.*)', fromMe: true, desc: Lang.EVINS_DESC}, async (message, match) => {
+    Julie.addCommand({pattern: 'insult ?(.*)', fromMe: false, desc: Lang.EVINS_DESC}, async (message, match) => {
 	  if (match[1] === 'xx') return await message.reply(Lang.NEED_LOCATIONA);
 	  const url = `https://evilinsult.com/generate_insult.php?lang=en&type=json`;
 	  try {
@@ -130,7 +130,7 @@ if (config.WORKTYPE == 'private') {
     });
 
 
-    Julie.addCommand({pattern: 'quote ?(.*)', fromMe: true, desc: Lang.QUOTE_DESC}, async (message, match) => {
+    Julie.addCommand({pattern: 'quote ?(.*)', fromMe: false, desc: Lang.QUOTE_DESC}, async (message, match) => {
 	  if (match[1] === 'xx') return await message.reply(Lang.NEED_LOCATIONA);
 	  const url = `https://api.quotable.io/random`;
 	  try {
