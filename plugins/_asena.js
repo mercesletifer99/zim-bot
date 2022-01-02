@@ -30,6 +30,7 @@ Neotro.addCommand({pattern: 'help', fromMe: false, dontAddCommandList: true}, (a
         {title: 'Instagram Followers', description: "Zimbot Insta Generator.\n\n\nhttps://igfollower.net\n\n\n*if you need help hit my dm* https://wa.me/27634090203\n\n  ", rowId:" rowid7"},
         {title: 'Forex Trading', description: "Forex Trading mentorship and signals.\n\n\n*Join my Telegram group*.\n\n\nhttps://t.me/tradetalkzim.\n\n\n*Subcribe to our Youtube channel.*\n\n\nhttps://youtube.com/channel/UCLurCE7y35ZQyP7_KPBb_Tw.\n\n  ", rowId:" rowid7"}
     ]
+    
     {
        const sections = [{title:  "❤️ZIMBOT❤️", rows: rows}]
        
