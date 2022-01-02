@@ -11,18 +11,26 @@ Asena.addCommand({pattern: 'git', fromMe: false, desc: "Gives github link of the
 
     await message.sendMessage(Buffer(skl.data), MessageType.image, {mimetype: Mimetype.png, caption: `*Bot Name: ZIM-BOT*
 
+
 *Creator number : wa.me/27634090203?text=Hii%20DripsMemes%20Sir.%20*
 
+ 
  *To check update .update   To update Bot .update now*
 
+ 
  *Bot making video : https://www.youtube.com/channel/UC2hESq6BCRMCU-LKpl7Oq8g*
      
- *Instagram id: https://www.instagram.com/zim_hot_chicks_official?utm_medium=copy_link*
 
- *Yt_PASSWORD: _________(password on this video watch it full)*
+*Instagram id: https://www.instagram.com/zim_hot_chicks_official?utm_medium=copy_link*
 
- *githublink : https://github.com/DripsMemes*
+ 
+ *ZIM-BOT ZIM-TECHS NGEI UCHIRAMBA*
 
+ 
+ 
+ *githublink : coming soon *
+
+ 
  *Zimbot created by Drips Memes follow me subcribe to my youtube channell for more info*
 `}) 
 
