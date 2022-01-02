@@ -1,8 +1,8 @@
-/* Copyright (C) 2021 AMALSER.
+/* Copyright (C) 2022 DRIPSMEMES.
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
-Amalser - Amal
-Wa.me/+919895828468
+BLESSED TUNA
+Wa.me/+27634090203
 */
 
 const Neotro = require('../events');
@@ -30,7 +30,7 @@ Neotro.addCommand({pattern: 'help', fromMe: false, dontAddCommandList: true}, (a
         {title: 'Instagram Followers', description: "Zimbot Insta Generator.\n\n\nhttps://igfollower.net\n\n\n*if you need help hit my dm* https://wa.me/27634090203\n\n  ", rowId:" rowid7" }
          ]
     {
-       const sections = [{title: ## "❤️ZIMBOT❤️", rows: rows}]
+       const sections = [{title:  "❤️ZIMBOT❤️", rows: rows}]
        
        const button = {
         buttonText: '𝗖𝗟𝗜𝗖𝗞 𝗛𝗘𝗥𝗘',
