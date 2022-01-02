@@ -3,12 +3,12 @@ const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys'
 const fs = require('fs');
 const axios = require('axios');
 
-Asena.addCommand({pattern: 'pink', fromMe: false,dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'dripsmemes', fromMe: false,dontAddCommandList: true}, (async (message, match) => {
 
     var r_text = new Array ();    
-r_text[0] = "\nEda eda, mandankonappi.. Nee enne kooduthal mandan aakkatheda\n";
-r_text[1] = "pinkye tholpikkaan ningalkavilla. Jeevitathil pinkiye tholpichittundu… palarum… palavattom…😥😥 aarellum aaa sed bgm onn iduo...";
-r_text[2] = "pinky says i love you 😘";
+r_text[0] = "dripsmemes says i love you 😘";
+r_text[1] = "dripsmemes says i love you 😘...";
+r_text[2] = "dripsmemes says i love you 😘";
 r_text[3] = "Pinkyudeyude yudhangal Company Kanan Povunnatheyuloo";
 r_text[4] = "hi, how are you";
 r_text[5] = "ennikk korch rest theroo...🥵🥵";
@@ -17,7 +17,7 @@ r_text[7] = "താനാരാണെന്ന് തനിക്ക് അറ�
 r_text[8] = "\n enne vilicho...?🧐 \n";
 r_text[9] = "ente per Pinky ,ninte per donkey, backi ellarum monkey😼😼";
 r_text[10] = "nee vilicha enikk villi kelkathe irrikkaan pattuo";
-r_text[11] = "do you know who is my creator..? its none other than afnanplk";
+r_text[11] = "do you know who is my creator..? its none other than DripsMemes";
 r_text[12] = "രണ്ട് ബക്കറ്റ് നിറയെ വെള്ളമുണ്ട്. അതിൽ ഒരു ബക്കറ്റിനു ദ്വാരമുള്ളതാണ്. എന്നാൽ ദ്വാരമുള്ള ബക്കറ്റിൽ നിന്നും വെള്ളം പോകുന്നില്ല. കാരണം എന്താണ്? para ninak vivaram indo nokkatte";
 r_text[13] = ".song adich thangalude fav song name para pinky ath download aakki theraam";
 r_text[14] = "ഹിന്ദിക്കാർ പോക്കറ്റിലും മലയാളികൾ അടുപ്പിലും വെക്കുന്ന സാധനം എന്ത്..?  ennallum ath enthaayikkum...🤔🤔";
