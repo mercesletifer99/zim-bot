@@ -34,7 +34,7 @@ Project created by <a href="https://github.com/dripshacker">Drips Memes</a> to m
   <p align="center">
   <a href="httsp://github.com/DripsMemes">
     
-<img src="https://i.imgur.com/O4lVccf.jpeg/github/repo-size/dripshacker/zim-bot?color=green&label=Repo%20total%20size&style=plastic">
+<a href="https://github/repo-size/dripshacker/zim-bot?color=green&label=Repo%20total%20size&style=plastic">
 <p align="center">
 <a href="https://github.com/farhan-dqz/followers"
 <img title="Followers" src="https://img.shields.io/github/followers/farhan-dqz?color=blue&style=flat-square"></a>
