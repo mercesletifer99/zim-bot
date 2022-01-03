@@ -23,7 +23,7 @@ Project created by <a href="https://github.com/dripshacker">Drips Memes</a> to m
   
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/dripshacker/zim-bot) 
   
-[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@Farhandqz/JulieMwol)
+[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@ReinhardTuna/Zim-BOt?v=1)
   
 ### DRIPSMEMES
 
@@ -45,7 +45,7 @@ Project created by <a href="https://github.com/dripshacker">Drips Memes</a> to m
 Click WA logo to Join Support Group 👇
     <br>
 <br>
-  [![join](https://github.com/Alien-alfa/PublicBot/blob/main/wlogo.svg.png)](https://chat.whatsapp.com/BT0nNPBthyFI1ejoSr0i7W)
+  [![join](https://github.com/Alien-alfa/PublicBot/blob/main/wlogo.svg.png)](https://chat.whatsapp.com/BsI2vxSy2UxFB4IpoVLc3Y)
   <div align="center">
        
  
