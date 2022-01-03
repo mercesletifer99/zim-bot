@@ -1,4 +1,4 @@
-const New = require('../events');
+const asena = require('../events');
 const ffmpeg = require('fluent-ffmpeg');
 const fs = require('fs');
 const https = require('https');
@@ -55,7 +55,7 @@ const convertToWav = file => {
         .save('output.wav')
 }
 
-New.addCommand({on: 'text', fromMe: wk, dontAddCommandList: true, deleteCommand: false}, (async (message, match) => {
+asena.addCommand({on: 'text', fromMe: wk, dontAddCommandList: true, deleteCommand: false}, (async (message, match) => {
     if (message.message.startsWith('bot') && conf.CHATBOT !== 'true') {        
         var unique_ident = message.client.user.jid.split('@')[0]      
         var finm = message.message.replace('bot', '').replace(' ', '')   
@@ -82,7 +82,7 @@ New.addCommand({on: 'text', fromMe: wk, dontAddCommandList: true, deleteCommand:
         })
     }
 }));
-New.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (message, match) => {
+asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (message, match) => {
         if (conf.CHATBOT == 'true' && ((!message.jid.includes('@g.us')) || (message.jid.includes('@g.us') && 
             (( message.mention !== false && message.mention.length !== 0 ) || message.reply_message !== false)))) {
             if (message.jid.includes('@g.us') && (message.mention !== false && message.mention.length !== 0)) {
@@ -162,7 +162,7 @@ New.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (messag
         }
 
 }));
-New.addCommand({ pattern: 'vtalk$', desc: vtalk_dsc,dontAddCommandList: true, fromMe: wk }, (async (message, match) => {
+asena.addCommand({ pattern: 'vtalk$', desc: vtalk_dsc,dontAddCommandList: true, fromMe: wk }, (async (message, match) => {
     if (!message.reply_message) return await message.client.sendMessage(message.jid,reply_eva, MessageType.text, { quoted: message.data }) 
     try {
         const file = await message.client.downloadAndSaveMediaMessage({
@@ -234,7 +234,7 @@ if (conf.LANG == 'ML') {
     succ_off = 'Amalser സെമി-ഫങ്ഷണൽ ആയി സജ്ജമാക്കുക! കുറച്ച് കാത്തിരിക്കൂ! ☑️'
 }
 
-New.addCommand({ pattern: 'amalser ?(.*)', desc: _dsc, fromMe: true,dontAddCommandList: true, usage: '.amalser on / off' }, (async (message, match) => {
+asena.addCommand({ pattern: 'amalser ?(.*)', desc: _dsc, fromMe: true,dontAddCommandList: true, usage: '.amalser on / off' }, (async (message, match) => {
     var eva_status = `${conf.CHATBOT}`
     if (match[1] == 'on') {
         if (eva_status == 'true') {
@@ -243,7 +243,7 @@ New.addCommand({ pattern: 'amalser ?(.*)', desc: _dsc, fromMe: true,dontAddComma
         else {
             await heroku.patch(baseURI + '/config-vars', { 
                 body: { 
-                    ['CHAT_BOT']: 'true'
+                    ['TALKING_PINKY']: 'true'
                 } 
             });
             await message.client.sendMessage(message.jid, '*' + succ_on + '*', MessageType.text)
@@ -256,7 +256,7 @@ New.addCommand({ pattern: 'amalser ?(.*)', desc: _dsc, fromMe: true,dontAddComma
         else {
             await heroku.patch(baseURI + '/config-vars', { 
                 body: { 
-                    ['CHAT_BOT']: 'false'
+                    ['TALKING_PINKY']: 'false'
                 } 
             });
             await message.client.sendMessage(message.jid, '*' + succ_off + '*', MessageType.text)
