@@ -17,7 +17,7 @@ async function checkImAdmin(message, user = message.client.user.jid) {
     return sonuc.includes(true);
 }
 
-Julie.addCommand({pattern: 'ban ?(.*)', fromMe: false, dontAddCommandList: true, onlyGroup: true, desc: Lang.BAN_DESC}, (async (message, match) => {  
+Julie.addCommand({pattern: 'ban ?(.*)', fromMe: true, dontAddCommandList: true, onlyGroup: true, desc: Lang.BAN_DESC}, (async (message, match) => {  
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
 
@@ -1533,7 +1533,7 @@ Julie.addCommand({pattern: 'mute ?(.*)', fromMe: false, dontAddCommandList: true
     }
 }));
 
-Julie.addCommand({pattern: 'unmute ?(.*)', fromMe: false, dontAddCommandList: true, onlyGroup: true, desc: Lang.UNMUTE_DESC}, (async (message, match) => {    
+Julie.addCommand({pattern: 'unmute ?(.*)', fromMe: true, dontAddCommandList: true, onlyGroup: true, desc: Lang.UNMUTE_DESC}, (async (message, match) => {    
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
 
@@ -1547,7 +1547,7 @@ Julie.addCommand({pattern: 'unmute ?(.*)', fromMe: false, dontAddCommandList: tr
     }
 }));
 
-Julie.addCommand({pattern: 'invite ?(.*)', fromMe: false, dontAddCommandList: true, onlyGroup: true, desc: Lang.INVITE_DESC}, (async (message, match) => {    
+Julie.addCommand({pattern: 'invite ?(.*)', fromMe: true, dontAddCommandList: true, onlyGroup: true, desc: Lang.INVITE_DESC}, (async (message, match) => {    
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN, MessageType.text);
     var invite = await message.client.groupInviteCode(message.jid);
@@ -1563,7 +1563,7 @@ Julie.addCommand({pattern: 'rename ?(.*)', onlyGroup: false, fromMe: true,desc: 
     }
 ));
 
-Julie.addCommand({pattern: 'revoke', fromMe: false, onlyGroup: true, desc: jul.REVOKE_DESC}, (async (message, match) => {    
+Julie.addCommand({pattern: 'revoke', fromMe: true, onlyGroup: true, desc: jul.REVOKE_DESC}, (async (message, match) => {    
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid, Lang.IM_NOT_ADMIN, MessageType.text);
     await message.client.revokeInvite(message.jid)
