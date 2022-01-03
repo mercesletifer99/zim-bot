@@ -177,7 +177,7 @@ Julie.addCommand({pattern: 'demote ?(.*)', fromMe: true, onlyGroup: true, desc: 
     }
 }));
 
-Julie.addCommand({pattern: 'mute ?(.*)', fromMe: false, dontAddCommandList: true, onlyGroup: true, desc: Lang.MUTE_DESC}, (async (message, match) => {    
+Julie.addCommand({pattern: 'mute ?(.*)', fromMe: true, dontAddCommandList: true, onlyGroup: true, desc: Lang.MUTE_DESC}, (async (message, match) => {    
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
 
@@ -1554,7 +1554,7 @@ Julie.addCommand({pattern: 'invite ?(.*)', fromMe: true, dontAddCommandList: tru
     await message.client.sendMessage(message.jid,Lang.INVITE + ' https://chat.whatsapp.com/' + invite, MessageType.text);
 }));
 
-Julie.addCommand({pattern: 'rename ?(.*)', onlyGroup: false, fromMe: true,desc: Julie}, (async (message, match) => {
+Julie.addCommand({pattern: 'rename ?(.*)', onlyGroup: true, fromMe: true,desc: Julie}, (async (message, match) => {
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
     if (match[1] === '') return await message.client.sendMessage(message.jid,'changing',MessageType.text);
