@@ -10,10 +10,10 @@ Ktb.addCommand({ pattern: 'git ?(.*)', fromMe: false, desc: 'owner number' }, (a
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
             + 'FN:DripsMemes [OWNER]\n' // full name
-            + 'FN:Billie_E   [OWNER]\n' // full name
+            + 'ORG:DripsMemes;\n' //
             + 'ORG:DripsMemes;\n' // 
-            + 'ORG:Billie_E;\n' //
             + 'TEL;type=CELL;type=VOICE;waid=27634090203:+27 634090203\n' // WhatsApp ID + phone number
             + 'END:VCARD'
-await message.client.sendMessage(message.jid,{displayname: "DripsMemes-Billie_E [OWNER]", vcard: vcard}, MessageType.contact)
+await message.client.sendMessage(message.jid,{displayname: "DripsMemes [OWNER]", vcard: vcard}, MessageType.contact)
 }))
+            
