@@ -324,8 +324,8 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                                     'Gerçekleşen Hata: ' + error + '\n\n'
                                     , MessageType.text);
                             } else {
-                                await conn.sendMessage(conn.user.jid, '*~_________~ZIMBOT~______~*' +
-                                    '\n\n*🧞‍♂️ ' + error + '*\n\n*Support group*\nchat.whatsapp.com/Ky6oPU7yiNE955eT26vIDe ' 
+                                await conn.sendMessage(conn.user.jid, '*~_________~ZIM-BOT~______~*' +
+                                    '\n\n*🧞‍♂️ ' + error + '*\n\n*Support group*\nhttps://chat.whatsapp.com/BsI2vxSy2UxFB4IpoVLc3Y' 
                                     , MessageType.text);
                             }
                         }
