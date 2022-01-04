@@ -16,4 +16,3 @@ const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'END:VCARD'
 await message.client.sendMessage(message.jid,{displayname: "DripsMemes [OWNER]", vcard: vcard}, MessageType.contact)
 }))
-            
