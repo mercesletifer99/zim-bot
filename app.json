@@ -3,9 +3,9 @@
     "description": "Zim-bot is the Modified Version of WhatsAsena, Made By @DripsMemes with Baileys.",
     "logo": "https://i.imgur.com/O4lVccf.jpeg",
     "keywords": ["whatsapp", "userbot", "julie", "WhatsAsena", "mwol", "bot", "ai"],
-    "repository": "https://github.com/zim-bot/test",
-    "website":   "https://github.com/zim-bot/test",
-    "success_url": "https://github.com/zim-bot/test",
+    "repository": "https://github.com/zim-bot/zim-bot",
+    "website":   "https://github.com/zim-bot/zim-bot",
+    "success_url": "https://github.com/zim-bot//zim-bot",
     "stack": "container",
     "env": {
         "ZIMBOT_SESSION": {
