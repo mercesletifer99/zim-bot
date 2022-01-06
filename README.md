@@ -1,9 +1,17 @@
-
+<!-- Typing SVG -->
+<p align="center">
+    <a href="https://git.io/J0hKr">
+        <img
+            src="https://readme-typing-svg.herokuapp.com?size=33&width=800&lines=Welcome+To+Zim-Bot+Coded+By+DripsMemes..."
+            alt="Typing SVG"
+        />
+    </a>
+</p>
 
 
 
   <p align="center">
-<a href="https://github.com/dripshacker"><img title="Author" src="https://i.imgur.com/O4lVccf.jpeg/badge/Author-DRIPSMEMES/BLENNIE?color=blue&style=for-the-badge&logo=whatsapp"></a>
+<a href=""><img title="Author" src="https://i.imgur.com/O4lVccf.jpeg/badge/Author-DRIPSMEMES/BLENNIE?color=blue&style=for-the-badge&logo=whatsapp"></a>
 </p>
 </div>
 <p align="center">
@@ -14,14 +22,14 @@ Project created by <a href="https://github.com/dripshacker">Drips Memes</a> to m
     <br> 
 </p>
 
-![Profile Views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/dripshacker/zim-bot&title=Profile%20Views)
+![Profile Views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/zim-bot/zim-bot&title=Profile%20Views)
 
 ## Setup
 <div align="center">
 
   ### Simple Method
   
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/zim-bot/test) 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/zim-bot/zim-bot) 
   
 [![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@ReinhardTuna/Zim-BOt?v=1)
   
@@ -32,13 +40,13 @@ Project created by <a href="https://github.com/dripshacker">Drips Memes</a> to m
 ----
 
   <p align="center">
-  <a href="httsp://github.com/DripsMemes">
+  <a href="httsp://github.com/zim-bot">
     
-<a href="https://github/repo-size/dripshacker/zim-bot?color=green&label=Repo%20total%20size&style=plastic">
+<a href="https://github/repo-size/zim-bot/zim-bot?color=green&label=Repo%20total%20size&style=plastic">
 <p align="center">
-<a href="https://github.com/farhan-dqz/followers"
+<a href="https://github.com/zim-bot"
 <img title="Followers" src="https://img.shields.io/github/followers/farhan-dqz?color=blue&style=flat-square"></a>
-<a href="https://github.com/farhan-dqz/JulieMwol/stargazers/">
+<a href="https://wa/me/27634090203">
 
 
 ## 📢 Guide
@@ -61,7 +69,7 @@ By establishing the Asena, you are deemed to have accepted these responsibilitie
 ## Developers
   <div align="center">
     
-  [![DripsMemes](https://github.com/dripshacker.png?size=100)](https://github.com/dripshacker) | 
+  [![DripsMemes]](https://github.com/dripshacker) | 
 ----|----|----|----
 
 Developer, Base, Bug Fixes, Modules| Re-Developer, Bug Fixes, Modules, Commits |  Modifiying  as   public | Bug Fixes, Modules 
