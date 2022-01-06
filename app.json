@@ -3,12 +3,12 @@
     "description": "Zim-bot is the Modified Version of WhatsAsena, Made By @DripsMemes with Baileys.",
     "logo": "https://i.imgur.com/O4lVccf.jpeg",
     "keywords": ["whatsapp", "userbot", "julie", "WhatsAsena", "mwol", "bot", "ai"],
-    "repository": "https://github.com/dripshacker/Julie-Mwol",
-    "website":   "https://github.com/farhan-dqz/Julie-Mwol",
-    "success_url": "https://github.com/farhan-dqz/Julie-Mwol",
+    "repository": "https://github.com/zim-bot/test",
+    "website":   "https://github.com/zim-bot/test",
+    "success_url": "https://github.com/zim-bot/test",
     "stack": "container",
     "env": {
-        "JULIE_SESSION": {
+        "ZIMBOT_SESSION": {
             "description": "Type here yours Asena Session.",
             "required": true
         },
