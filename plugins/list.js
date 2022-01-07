@@ -20,100 +20,100 @@ Asena.addCommand({pattern: 'help', fromMe: false, desc: 'command help menu'}, (a
 
     await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.jpg, contextInfo: {mentionedJid: message.mention}, caption: `
    ` + config.LOGO_NAME + `
- 
-🎗️ .xmedia
-💖 It is a plugin with more than 25 media tools._ 
-
-🎗️ .audio command
-💖 Bot send all bgm commands 
-
-🎗️ .ownercmnd
-💖 set of commands for bot user or sudo_
-
-🎗️ .codtts
-💖 language code to change the voice in .tts & also for .trt translation_ 
-
-🎗️ .adan 
-💖 Finds prayer time._ 
-💬 Eg:- : .prayer <city>
-
-🎗️ .rename 
-💖 [object Object]_ 
-
-🎗️ .revoke
-
-🎗️ .git
-💖 it send bot making git
-
-🎗️ .print 
-💖 Prints the inside of the file on the server._ 
-
-🎗️ .bashmedia 
-💖 Sends audio, video and photos inside the server._ 
-💬 Eg:- : video.mp4 && media/gif/pic.mp4
-
-🎗️ .addserver
-💖 Uploads image, audio or video to the server._ 
-
-🎗️ .term1 
-💖 Allows to run the command on the server's shell._ 
-
-🎗️ .findvid
-💖 Shows the technical information of the replied video._ 
-
-🎗️ .pm 
-💖 Sends a private message to the replied person._ 
-
-🎗️ .s 
-💖 Sends a private voice message to the respondent._ 
-
-🎗️ .anime
-💖 random anime image _ 
-
-🎗️ .apkmod
-
-🎗️ .fatp
-
-🎗️ .ttp 
-💖 Converts text to plain painting._ 
-
-🎗️ .attp 
-💖 Adds rainbow effect to the text as a sticker._ 
-
-🎗️ .bob 
-💖 Make text on sponge bob's board_ 
-
-🎗️ .slot 
-💖 Mini game for you_ 
-
-🎗️ .gura 
-💖 Create gawr gura text_ 
-
-🎗️ .harta 
-💖 Create random texts_ 
-
-🎗️ .rip 
-💖 Please provide an image link for the effect to be applied (Apply death effect)_ 
-
-🎗️ .qrcode 
-💖 Create random texts_ 
-
-🎗️ .nulis 
-💖 Create random texts_ 
-
-🎗️ .sand 
-💖 Create random texts_ 
-
-💝 .bgm 
-💖 turn on and turn off bgm. -bot owner command_ 
-💬 Eg:- : .bgm on / off
-
-🎗️ .carbon
-💖 It sends carbon picture_ 
-
-🎗️ .warn
-💖 warning message_ 
-
+ ___________ᴢɪᴍ ʙᴏᴛ______________☜☞
+┇🎗️ .xmedia
+┃💖 It is a plugin with more than 25 media tools._ 
+┣☢☛☞☞☞☞☞☞☞☞☞®𝔡𝔯𝔦𝔭𝔰
+┃🎗️ .audio command
+┃💖 Bot send all bgm commands 
+┣☢☛☞☞☞☞☞☞☞☞☞®𝔡𝔯𝔦𝔭𝔰
+┃🎗️ .ownercmnd
+┃💖 set of commands for bot user or sudo_
+┣☢☛☞☞☞☞☞☞☞☞☞®𝔡𝔯𝔦𝔭𝔰
+|🎗️ .codtts
+ 💖 language code to change the voice in .tts & also for .trt translation_ 
+├☢☛☞☞☞☞☞☞☞☞☞♻𝔡𝔯𝔦𝔭𝔰
+┇🎗️ .adan 
+┇💖 Finds prayer time._ 
+┇💬 Eg:- : .prayer <city>
+┣☢☛☞☞☞☞☞☞☞☞☞♻𝔡𝔯𝔦𝔭𝔰
+┇🎗️ .rename 
+┇💖 [object Object]_ 
+┣
+┇🎗️ .revoke
+┣
+┆🎗️ .git
+┃💖 it send bot making git
+┣
+┇🎗️ .print 
+┃💖 Prints the inside of the file on the server._ 
+┣
+┃🎗️ .bashmedia 
+┃💖 Sends audio, video and photos inside the server._ 
+┃💬 Eg:- : video.mp4 && media/gif/pic.mp4
+┣
+┃🎗️ .addserver
+┃💖 Uploads image, audio or video to the server._ 
+┣
+┃🎗️ .term1 
+┃💖 Allows to run the command on the server's shell._ 
+┣
+┃🎗️ .findvid
+┃💖 Shows the technical information of the replied video._ 
+┣
+┃🎗️ .pm 
+┃💖 Sends a private message to the replied person._ 
+┣
+┃🎗️ .s 
+┃💖 Sends a private voice message to the respondent._ 
+┣
+┃🎗️ .anime
+┃💖 random anime image _ 
+┣
+┃🎗️ .apkmod
+┣
+┃🎗️ .fatp
+┣
+┃🎗️ .ttp 
+┃💖 Converts text to plain painting._ 
+┣
+┃🎗️ .attp 
+┃💖 Adds rainbow effect to the text as a sticker._ 
+┣
+┃🎗️ .bob 
+┃💖 Make text on sponge bob's board_ 
+┣┎━━━━━━━━━━━━━━━━━━━━━━━━━━━━━𝔡𝔯𝔦𝔭𝔰
+┃🎗️ .slot 
+☤💖 Mini game for you_ 
+☤
+☤🎗️ .gura 
+☤💖 Create gawr gura text_ 
+☤
+☤🎗️ .harta 
+☤💖 Create random texts_ 
+☤
+☤🎗️ .rip 
+☤💖 Please provide an image link for the effect to be applied (Apply death effect)_ 
+☤
+☤🎗️ .qrcode 
+☤💖 Create random texts_ 
+☤
+☤🎗️ .nulis 
+☤💖 Create random texts_ 
+☤
+☤🎗️ .sand 
+☤💖 Create random texts_ 
+❚
+❚💝 .bgm 
+❙💖 turn on and turn off bgm. -bot owner command_ 
+❚💬 Eg:- : .bgm on / off
+❚
+❙🎗️ .carbon
+❚💖 It sends carbon picture_ 
+❙
+❚🎗️ .warn
+❙💖 warning message_ 
+❙❒❒❒ ᴅʀɪᴘꜱᴍᴇᴍᴇꜱ ❒❒❒❞
 🎗️ .bgm 
 💖 change reply message BGM mode_ 
 💬 Eg:- : .bgm one / two
