@@ -9,21 +9,25 @@ Asena.addCommand({pattern: 'git', fromMe: false, desc: "Gives github link of the
 
     var skl = await axios.get("https://i.imgur.com/O4lVccf.jpeg", { responseType: 'arraybuffer' })
 
-    await message.sendMessage(Buffer(skl.data), MessageType.image, {mimetype: Mimetype.png, caption: `*Bot Name: ZIM-BOT*
+    await message.sendMessage(Buffer(skl.data), MessageType.image, {mimetype: Mimetype.png, caption: `*𝐁𝐎𝐓 𝐍𝐀𝐌𝐄: 𝐙𝐈𝐌-𝐁𝐎𝐓*
+ 
+◼◼◼◼◼◼◼◼◼◼◼◼©drips ®zimbots
 
-*Creator number : wa.me/27634090203?text=Hii%20DripsMemes%20Sir.%20*
+*𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑 𝐍𝐔𝐌𝐁𝐄𝐑 : wa.me/27634090203?text=Hii%20DripsMemes%20Sir.%20*
 
- *To check update .update   To update Bot .update now*
+ *𝐓𝐎 𝐂𝐇𝐄𝐂𝐊 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 .update   To update Bot .update now*
 
- *Bot making video : https://www.youtube.com/channel/UC2hESq6BCRMCU-LKpl7Oq8g*
+ *𝐁𝐎𝐓 𝐌𝐀𝐊𝐈𝐍𝐆 𝐕𝐈𝐃𝐄𝐎 : https://www.youtube.com/channel/UC2hESq6BCRMCU-LKpl7Oq8g*
      
  *Instagram id: https://www.instagram.com/zim_hot_chicks_official?utm_medium=copy_link*
 
- *ZIM-BOT ZIM-TECHS NGEI MUCHIRAMBA*
+ *𝐃𝐑𝐈𝐏𝐒 𝐎𝐅𝐂  𝐙𝐈𝐌-𝐓𝐄𝐂𝐇𝐒*
 
- *githublink : https://github.com/DripsMemes*
+ *𝐆𝐈𝐓𝐇𝐔𝐁 𝐋𝐈𝐍𝐊 : https://github.com/zim-bot*
 
- *Zimbot created by Drips Memes follow me subcribe to my youtube channell for more info*
+ *𝐙𝐈𝐌-𝐁𝐎𝐓 𝐂𝐑𝐄𝐀𝐓𝐄𝐃 𝐁𝐘  𝐃𝐑𝐈𝐏𝐒 𝐌𝐄𝐌𝐄𝐒 𝐒𝐔𝐁𝐒𝐂𝐑𝐈𝐁𝐄 𝐓𝐎 𝐌𝐘 𝐘𝐎𝐔𝐓𝐔𝐁𝐄 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐃𝐑𝐈𝐏𝐒 𝐎𝐅𝐂 𝐅𝐎𝐑 𝐔𝐏𝐃𝐀𝐓𝐄𝐒*
+
+ ◼◼◼◼◼◼◼◼◼◼◼◼©drips ®zimbots
 `}) 
 
 }));
