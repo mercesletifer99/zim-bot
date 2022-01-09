@@ -1,4 +1,6 @@
-/*codded by afnanplk
+* Copyright (C) 2020 Yusuf Usta.
+recodded by afnanplk
+PINKY V2
 */
 
 const {MessageType, GroupSettingChange} = require('@adiwajshing/baileys');
@@ -8,29 +10,19 @@ const Config = require('../config');
 const Language = require('../language');
 const Lang = Language.getString('admin');
 const mut = Language.getString('mute');
-
 const fs = require('fs');
 
- async function checkUsAdmin(message, user = message.data.participant) {
-    var grup = await message.client.groupMetadata(message.jid);
-    var sonuc = grup['participants'].map((member) => {     
-        if (member.jid.split("@")[0] == user.split("@")[0] && member.isAdmin) return true; else; return false;
-    });
-    return sonuc.includes(true);
-}
 async function checkImAdmin(message, user = message.client.user.jid) {
     var grup = await message.client.groupMetadata(message.jid);
-    var sonuc = grup['participants'].map((member) => {     
+    var sonuc = grup['participants'].map((member) => {
+        
         if (member.jid.split("@")[0] == user.split("@")[0] && member.isAdmin) return true; else; return false;
     });
     return sonuc.includes(true);
 }
-if (Config.WORKTYPE == 'admin') {
-    
-Asena.addCommand({pattern: 'ban ?(.*)', fromMe: false, dontAddCommandList: true, onlyGroup: true, desc: Lang.BAN_DESC}, (async (message, match) => {  
+
+Asena.addCommand({pattern: 'ban ?(.*)', fromMe: true, dontAddCommandList: true, onlyGroup: true, desc: Lang.BAN_DESC}, (async (message, match) => {  
     var im = await checkImAdmin(message);
-    var us = await checkUsAdmin(message);
-    if (!us) return await message.client.sendMessage(message.jid,Lang.PLKADMIN ,MessageType.text ,{quoted: message.data });
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
 
     if (Config.BANMSG == 'default') {
@@ -67,10 +59,17 @@ Asena.addCommand({pattern: 'ban ?(.*)', fromMe: false, dontAddCommandList: true,
     }
 }));
 
-Asena.addCommand({pattern: 'add(?: |$)(.*)', fromMe: false, dontAddCommandList: true, onlyGroup: true, desc: Lang.ADD_DESC}, (async (message, match) => {  
+Asena.addCommand({pattern: 'name ?(.*)', onlyGroup: true, fromMe: true,desc: Asena}, (async (message, match) => {
     var im = await checkImAdmin(message);
-    var us = await checkUsAdmin(message);
-    if (!us) return await message.client.sendMessage(message.jid,Lang.PLKADMIN,MessageType.text ,{quoted: message.data });
+    if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
+    if (match[1] === '') return await message.client.sendMessage(message.jid,SEWA);
+    await message.client.groupUpdateSubject(message.jid, match[1]);
+    await message.client.sendMessage(message.jid,SEWB,MessageType.text);
+    }
+));
+
+Asena.addCommand({pattern: 'add(?: |$)(.*)', fromMe: true, dontAddCommandList: true, onlyGroup: true, desc: Lang.ADD_DESC}, (async (message, match) => {  
+    var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
 
     if (Config.ADDMSG == 'default') {
@@ -103,10 +102,8 @@ Asena.addCommand({pattern: 'add(?: |$)(.*)', fromMe: false, dontAddCommandList: 
     }
 }));
 
-Asena.addCommand({pattern: 'promote ?(.*)', fromMe: false, dontAddCommandList: true, onlyGroup: true, desc: Lang.PROMOTE_DESC}, (async (message, match) => {    
+Asena.addCommand({pattern: 'promote ?(.*)', fromMe: true, dontAddCommandList: true, onlyGroup: true, desc: Lang.PROMOTE_DESC}, (async (message, match) => {    
     var im = await checkImAdmin(message);
-    var us = await checkUsAdmin(message);
-    if (!us) return await message.client.sendMessage(message.jid,Lang.PLKADMIN,MessageType.text ,{quoted: message.data });
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
 
     if (Config.PROMOTEMSG == 'default') {
@@ -163,10 +160,8 @@ Asena.addCommand({pattern: 'promote ?(.*)', fromMe: false, dontAddCommandList: t
     }
 }));
 
-Asena.addCommand({pattern: 'demote ?(.*)', fromMe: false, onlyGroup: true, desc: Lang.DEMOTE_DESC, dontAddCommandList: true}, (async (message, match) => {    
+Asena.addCommand({pattern: 'demote ?(.*)', fromMe: true, onlyGroup: true, desc: Lang.DEMOTE_DESC, dontAddCommandList: true}, (async (message, match) => {    
     var im = await checkImAdmin(message);
-    var us = await checkUsAdmin(message);
-    if (!us) return await message.client.sendMessage(message.jid,Lang.PLKADMIN ,MessageType.text ,{quoted: message.data });
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN);
 
     if (message.reply_message !== false) {
@@ -195,10 +190,8 @@ Asena.addCommand({pattern: 'demote ?(.*)', fromMe: false, onlyGroup: true, desc:
     }
 }));
 
-Asena.addCommand({pattern: 'mute ?(.*)', fromMe: false, dontAddCommandList: true, onlyGroup: true, desc: Lang.MUTE_DESC}, (async (message, match) => {    
+Asena.addCommand({pattern: 'mute ?(.*)', fromMe: true, dontAddCommandList: true, onlyGroup: true, desc: Lang.MUTE_DESC}, (async (message, match) => {    
     var im = await checkImAdmin(message);
-    var us = await checkUsAdmin(message);
-    if (!us) return await message.client.sendMessage(message.jid,Lang.PLKADMIN ,MessageType.text ,{quoted: message.data });
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
 
     if (Config.MUTEMSG == 'default') {
@@ -1553,10 +1546,8 @@ Asena.addCommand({pattern: 'mute ?(.*)', fromMe: false, dontAddCommandList: true
     }
 }));
 
-Asena.addCommand({pattern: 'unmute ?(.*)', fromMe: false, dontAddCommandList: true, onlyGroup: true, desc: Lang.UNMUTE_DESC}, (async (message, match) => {    
+Asena.addCommand({pattern: 'unmute ?(.*)', fromMe: true, dontAddCommandList: true, onlyGroup: true, desc: Lang.UNMUTE_DESC}, (async (message, match) => {    
     var im = await checkImAdmin(message);
-    var us = await checkUsAdmin(message);
-    if (!us) return await message.client.sendMessage(message.jid,Lang.PLKADMIN,MessageType.text ,{quoted: message.data });
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
 
     if (Config.UNMUTEMSG == 'default') {
@@ -1569,26 +1560,13 @@ Asena.addCommand({pattern: 'unmute ?(.*)', fromMe: false, dontAddCommandList: tr
     }
 }));
 
-Asena.addCommand({pattern: 'invite ?(.*)', fromMe: false, dontAddCommandList: true, onlyGroup: true, desc: Lang.INVITE_DESC}, (async (message, match) => {    
+Asena.addCommand({pattern: 'invite ?(.*)', fromMe: true, dontAddCommandList: true, onlyGroup: true, desc: Lang.INVITE_DESC}, (async (message, match) => {    
     var im = await checkImAdmin(message);
-    var us = await checkUsAdmin(message);
-    if (!us) return await message.client.sendMessage(message.jid,Lang.PLKADMIN,MessageType.text ,{quoted: message.data });
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN, MessageType.text);
     var invite = await message.client.groupInviteCode(message.jid);
     await message.client.sendMessage(message.jid,Lang.INVITE + ' https://chat.whatsapp.com/' + invite, MessageType.text);
 }));
 
-Asena.addCommand({pattern: 'rename ?(.*)', onlyGroup: false, fromMe: true,desc: Asena}, (async (message, match) => {
-    var im = await checkImAdmin(message);
-    var us = await checkUsAdmin(message);
-    if (!us) return await message.client.sendMessage(message.jid,Lang.PLKADMIN,MessageType.text ,{quoted: message.data });
-    if (!im) return await message.client.sendMessage(message.jid,'i am not admin',MessageType.text);
-    if (match[1] === '') return await message.client.sendMessage(message.jid,'changing',MessageType.text);
-    await message.client.groupUpdateSubject(message.jid, match[1]);
-    await message.client.sendMessage(message.jid,'group name changed to  ```' + match[1] + '```' ,MessageType.text);
-    }
-));
 module.exports = {
     checkImAdmin: checkImAdmin
 };
-}
