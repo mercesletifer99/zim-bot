@@ -1,4 +1,4 @@
-/* Codded by Phaticusthiccy
+/* Codded by Blessed Tuna/DripsamMemes
 eva artificial intelligence was codded by DripsMemes
 also 90% of thise code is done by DripsMemes
 re-coded or modified by Blessed 
