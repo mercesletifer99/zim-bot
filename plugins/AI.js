@@ -1,7 +1,7 @@
 /* Codded by Phaticusthiccy
-eva artificial intelligence was codded by Phaticusthiccy
-also 90% of thise code is done by Phaticusthiccy
-re-coded or modified by afnanplk-pinky
+eva artificial intelligence was codded by DripsMemes
+also 90% of thise code is done by DripsMemes
+re-coded or modified by Blessed 
 to bring new ai
 
 */
