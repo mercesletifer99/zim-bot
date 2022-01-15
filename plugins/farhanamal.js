@@ -1,8 +1,8 @@
-/* Copyright (C) 2021 AMALSER.
+/* Copyright (C) 2022 DripsMemes.
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
-Amalser - Amal
-Wa.me/+919895828468
+Drips  - Memes
+Wa.me/+27634090203
 */
 
 const Neotro = require('../events');
