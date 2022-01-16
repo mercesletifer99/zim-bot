@@ -1,3 +1,10 @@
+<a href="https://bit.ly/3koZRGY"><img src="https://fontmeme.com/temporary/82ff3cfcc1606b503d0b853f7262f8ba.png" alt="google-font" border="60"></a>
+
+
+
+
+
+
 <!-- Typing SVG -->
 <p align="center">
     <a href="https://git.io/J0hKr">
@@ -11,7 +18,7 @@
 
 
   <p align="center">
-<a href=""><img title="Author" src="https://i.imgur.com/O4lVccf.jpeg/badge/Author-DRIPSMEMES/BLENNIE?color=blue&style=for-the-badge&logo=whatsapp"></a>
+<a href=""><img title="Author" src="https://i.imgur.com/JRtatcV.jpg/badge/Author-DRIPSMEMES/BLENNIE?color=blue&style=for-the-badge&logo=whatsapp"></a>
 </p>
 </div>
 <p align="center">
