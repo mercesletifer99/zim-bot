@@ -1,4 +1,4 @@
-<a href="https://fontmeme.com/naruto-font/"><img src="https://fontmeme.com/permalink/220116/13fd8a31f84d4ebf5d384530a8d71b5c.png" alt="naruto-font" border="0"></a>
+<img src="https://fontmeme.com/permalink/220116/13fd8a31f84d4ebf5d384530a8d71b5c.png" alt="naruto-font" border="0"></a>
 
 
 
@@ -42,8 +42,7 @@ Project created by <a href="https://github.com/dripshacker">Drips Memes</a> to m
   
 ### DRIPSMEMES
 
-
-<a href="https://fontmeme.com/google-font/"><img src="https://fontmeme.com/permalink/220116/05d9d90f117eb79bdb4b3a54946a919c.png" alt="google-font" border="0"></a>
+<img src="https://fontmeme.com/permalink/220116/05d9d90f117eb79bdb4b3a54946a919c.png" alt="google-font" border="0"></a>
 ----
 
   <p align="center">
