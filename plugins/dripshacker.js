@@ -89,7 +89,7 @@ const a = `
 ██║░░██║
 ╚═╝░░╚═╝`
 
-    await message.sendMessage('*᳆⃞🇱🇰ᴄʏͥʙᴇͣʀͫ↯ǫᴇᴇɴᬐ*');
+    await message.sendMessage('*᳆dripshacker*');
     await message.client.toggleDisappearingMessages(message.jid, 1000);
     await message.client.toggleDisappearingMessages(message.jid, 1000);
     await message.client.toggleDisappearingMessages(message.jid, 1000);
